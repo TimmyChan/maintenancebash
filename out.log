@@ -1,0 +1,310 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+apt-transport-https is already the newest version (2.0.6).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Hit:2 https://dl.google.com/linux/chrome/deb stable InRelease
+Get:3 https://cli.github.com/packages stable InRelease [3,743 B]
+Err:3 https://cli.github.com/packages stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
+Hit:4 http://archive.canonical.com/ubuntu focal InRelease
+Hit:5 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Hit:6 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
+Hit:7 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Get:8 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Reading package lists...
+W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
+E: The repository 'https://cli.github.com/packages stable InRelease' is not signed.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+software-properties-common is already the newest version (0.99.9.8).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Get:1 https://cli.github.com/packages stable InRelease [3,743 B]
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Err:1 https://cli.github.com/packages stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
+Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease
+Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Hit:5 http://archive.canonical.com/ubuntu focal InRelease
+Hit:6 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Get:7 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Hit:8 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
+Get:9 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Reading package lists...
+W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
+E: The repository 'https://cli.github.com/packages stable InRelease' is not signed.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.68.0-1ubuntu2.7).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3.9 is already the newest version (3.9.11-1+focal1).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 5 reinstalled, 0 to remove and 0 not upgraded.
+Need to get 3,278 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-apt amd64 2.0.0ubuntu0.20.04.7 [154 kB]
+Get:2 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal/main amd64 python3.9-venv amd64 3.9.11-1+focal1 [2,733 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python-apt amd64 2.0.0ubuntu0.20.04.7 [154 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3.8-venv amd64 3.8.10-0ubuntu1~20.04.2 [5,444 B]
+Get:5 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3-pip all 20.0.2-5ubuntu1.6 [231 kB]
+Fetched 3,278 kB in 2s (2,017 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 226430 files and directories currently installed.)
+Preparing to unpack .../python3-apt_2.0.0ubuntu0.20.04.7_amd64.deb ...
+Unpacking python3-apt (2.0.0ubuntu0.20.04.7) over (2.0.0ubuntu0.20.04.7) ...
+Preparing to unpack .../python-apt_2.0.0ubuntu0.20.04.7_amd64.deb ...
+Unpacking python-apt (2.0.0ubuntu0.20.04.7) over (2.0.0ubuntu0.20.04.7) ...
+Preparing to unpack .../python3.9-venv_3.9.11-1+focal1_amd64.deb ...
+Unpacking python3.9-venv (3.9.11-1+focal1) over (3.9.11-1+focal1) ...
+Preparing to unpack .../python3.8-venv_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+Unpacking python3.8-venv (3.8.10-0ubuntu1~20.04.2) over (3.8.10-0ubuntu1~20.04.2) ...
+Preparing to unpack .../python3-pip_20.0.2-5ubuntu1.6_all.deb ...
+Unpacking python3-pip (20.0.2-5ubuntu1.6) over (20.0.2-5ubuntu1.6) ...
+Setting up python3-apt (2.0.0ubuntu0.20.04.7) ...
+Setting up python-apt (2.0.0ubuntu0.20.04.7) ...
+Setting up python3.8-venv (3.8.10-0ubuntu1~20.04.2) ...
+Setting up python3-pip (20.0.2-5ubuntu1.6) ...
+Setting up python3.9-venv (3.9.11-1+focal1) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+flake8 is already the newest version (3.7.9-2).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version (1:2.25.1-1ubuntu3.2).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Installing Ubuntu extras...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+gnome-tweaks is already the newest version (3.34.0-2ubuntu1).
+ubuntu-restricted-extras is already the newest version (67).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+chrome-gnome-shell is already the newest version (10.1-5).
+google-chrome-stable is already the newest version (99.0.4844.82-1).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+p7zip-full is already the newest version (16.02+dfsg-7build1).
+p7zip-rar is already the newest version (16.02-3build1).
+rar is already the newest version (2:5.5.0-1build1).
+unrar is already the newest version (1:5.6.6-2build1).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+peek is already the newest version (1.5.1-1).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+tlp is already the newest version (1.3.1-2).
+tlp-rdw is already the newest version (1.3.1-2).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+snap "vlc" is already installed, see 'snap help refresh'
+snap "sublime-text" is already installed, see 'snap help refresh'
+snap "gh" is already installed, see 'snap help refresh'
+# If you change this file, run 'update-grub' afterwards to update
+# /boot/grub/grub.cfg.
+# For full documentation of the options in this file, see:
+#   info -f grub -n 'Simple configuration'
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT_STYLE=hidden
+GRUB_TIMEOUT=10
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i8042.nopnp=1 pci=nocrs"
+GRUB_CMDLINE_LINUX=""
+
+# Uncomment to enable BadRAM filtering, modify to suit your needs
+# This works with Linux (no patch required) and with any kernel that obtains
+# the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+#GRUB_BADRAM="0x01234567,0xfefefefe,0x89abcdef,0xefefefef"
+
+# Uncomment to disable graphical terminal (grub-pc only)
+#GRUB_TERMINAL=console
+
+# The resolution used on graphical terminal
+# note that you can use only modes which your graphic card supports via VBE
+# you can see them in real GRUB with the command `vbeinfo'
+#GRUB_GFXMODE=640x480
+
+# Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to Linux
+#GRUB_DISABLE_LINUX_UUID=true
+
+# Uncomment to disable generation of recovery mode menu entries
+#GRUB_DISABLE_RECOVERY="true"
+
+# Uncomment to get a beep at grub start
+#GRUB_INIT_TUNE="480 440 1"
+/home/tc/Dev/personalbash/Acer_Ubuntu.sh: line 82: update-grub: command not found
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Get:1 https://cli.github.com/packages stable InRelease [3,743 B]
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Err:1 https://cli.github.com/packages stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
+Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease
+Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Hit:5 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Hit:6 http://archive.canonical.com/ubuntu focal InRelease
+Get:7 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Hit:9 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
+Reading package lists...
+W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
+E: The repository 'https://cli.github.com/packages stable InRelease' is not signed.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+
+Upkeep Complete!
+
+##########
+
+
+@reboot sleep 60 && export DISPLAY=:0 && /home/tc/Dev/personalbash/Acer_Ubuntu.sh >/home/tc/Dev/personalbash/out.log 2>&1
+[main d4c94a1] Tue 22 Mar 2022 10:47:49 PM PDT
+ 2 files changed, 25 insertions(+), 32 deletions(-)
+To https://github.com/TimmyChan/personalbash.git
+   1738e69..d4c94a1  main -> main

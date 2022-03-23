@@ -1,7 +1,7 @@
 #!/usr/bin/bash
-# This bash shell script is meant to be used as a maintenance and setup file for personal use
-# Once run this script will be also added to crontab and run @reboot
-# And also it pushes itself to git. (entirely inspired by Github user @nodeadtree)
+# This bash shell script is a maintenance and setup file for personal use
+# Once run this script will add itself to crontab and run @reboot
+# And also it pushes the directory to git. (entirely inspired by Github user @nodeadtree)
 # Please note that besides running this file,
 # one should setup github authentication using HTTPS for the repo for this trick to work,
 # some weird things happen if you try to use SSH in root. 
@@ -100,7 +100,8 @@ echo ""
 
 
 crontab -l > cron_bkp
-echo "@reboot sleep 60 && export DISPLAY=:0 && $(realpath "$0") >${DIR}/out.log 2>&1"  > cron_bkp
+# TODO: change the following line to SED or something less destructive for wider use lols 
+echo "@reboot sleep 60 && export DISPLAY=:0 && $(realpath "$0") > ${DIR}/out.log 2>&1"  > cron_bkp
 crontab cron_bkp
 rm cron_bkp
 

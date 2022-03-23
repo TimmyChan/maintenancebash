@@ -10,16 +10,20 @@ apt-transport-https is already the newest version (2.0.6).
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
 Get:1 https://cli.github.com/packages stable InRelease [3,743 B]
-Hit:2 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:3 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
 Err:1 https://cli.github.com/packages stable InRelease
   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
-Hit:4 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
-Hit:5 http://archive.canonical.com/ubuntu focal InRelease
-Hit:6 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
-Hit:7 http://security.ubuntu.com/ubuntu focal-security InRelease
-Hit:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
-Hit:9 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
+Get:5 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Hit:6 http://archive.canonical.com/ubuntu focal InRelease
+Hit:7 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Hit:8 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
+Get:9 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1,674 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [622 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [913 kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [24.5 kB]
 Reading package lists...
 W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
 E: The repository 'https://cli.github.com/packages stable InRelease' is not signed.
@@ -41,14 +45,14 @@ software-properties-common is already the newest version (0.99.9.8).
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Get:1 https://cli.github.com/packages stable InRelease [3,743 B]
 Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
-Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease
+Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Hit:4 https://dl.google.com/linux/chrome/deb stable InRelease
 Err:1 https://cli.github.com/packages stable InRelease
   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
-Hit:4 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
-Hit:5 http://archive.canonical.com/ubuntu focal InRelease
-Hit:6 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
-Hit:7 http://security.ubuntu.com/ubuntu focal-security InRelease
-Hit:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:5 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:6 http://archive.canonical.com/ubuntu focal InRelease
+Hit:7 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Get:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
 Hit:9 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
 Reading package lists...
 W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
@@ -83,7 +87,7 @@ Get:2 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal/main amd64 python3.9-
 Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python-apt amd64 2.0.0ubuntu0.20.04.7 [154 kB]
 Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3.8-venv amd64 3.8.10-0ubuntu1~20.04.2 [5,444 B]
 Get:5 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3-pip all 20.0.2-5ubuntu1.6 [231 kB]
-Fetched 3,278 kB in 2s (2,105 kB/s)
+Fetched 3,278 kB in 2s (2,014 kB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 188264 files and directories currently installed.)
 Preparing to unpack .../python3-apt_2.0.0ubuntu0.20.04.7_amd64.deb ...
 Unpacking python3-apt (2.0.0ubuntu0.20.04.7) over (2.0.0ubuntu0.20.04.7) ...
@@ -205,15 +209,15 @@ GRUB_CMDLINE_LINUX=""
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
 Get:1 https://cli.github.com/packages stable InRelease [3,743 B]
-Hit:2 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:3 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
 Err:1 https://cli.github.com/packages stable InRelease
   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
-Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
-Hit:5 http://archive.canonical.com/ubuntu focal InRelease
-Hit:6 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Hit:5 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:6 http://archive.canonical.com/ubuntu focal InRelease
 Hit:7 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
-Hit:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Get:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
 Hit:9 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
 Reading package lists...
 W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
@@ -234,12 +238,3 @@ Upkeep Complete!
 
 
 @reboot sleep 60 && export DISPLAY=:0 && /home/tc/Dev/maintenancebash/Acer_Ubuntu.sh > /home/tc/Dev/maintenancebash/out.log 2>&1
-[main 316fa47] Wed 23 Mar 2022 01:21:21 PM PDT
- 2 files changed, 21 insertions(+), 21 deletions(-)
-No protocol specified
-Error: Can't open display: :0
-git@github.com: Permission denied (publickey).
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.

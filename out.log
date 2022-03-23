@@ -10,14 +10,14 @@ apt-transport-https is already the newest version (2.0.6).
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
 Get:1 https://cli.github.com/packages stable InRelease [3,743 B]
-Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
-Hit:3 http://archive.canonical.com/ubuntu focal InRelease
-Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal InRelease
 Err:1 https://cli.github.com/packages stable InRelease
   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
-Hit:5 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:6 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
-Hit:7 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:5 http://archive.canonical.com/ubuntu focal InRelease
+Hit:6 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Hit:7 http://security.ubuntu.com/ubuntu focal-security InRelease
 Hit:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
 Hit:9 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
 Reading package lists...
@@ -41,13 +41,13 @@ software-properties-common is already the newest version (0.99.9.8).
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Get:1 https://cli.github.com/packages stable InRelease [3,743 B]
 Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
-Hit:3 http://archive.canonical.com/ubuntu focal InRelease
-Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
-Hit:5 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease
 Err:1 https://cli.github.com/packages stable InRelease
   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
-Hit:6 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
-Hit:7 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:5 http://archive.canonical.com/ubuntu focal InRelease
+Hit:6 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Hit:7 http://security.ubuntu.com/ubuntu focal-security InRelease
 Hit:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
 Hit:9 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
 Reading package lists...
@@ -83,8 +83,8 @@ Get:2 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal/main amd64 python3.9-
 Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python-apt amd64 2.0.0ubuntu0.20.04.7 [154 kB]
 Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3.8-venv amd64 3.8.10-0ubuntu1~20.04.2 [5,444 B]
 Get:5 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3-pip all 20.0.2-5ubuntu1.6 [231 kB]
-Fetched 3,278 kB in 2s (2,044 kB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 188249 files and directories currently installed.)
+Fetched 3,278 kB in 2s (2,105 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 188264 files and directories currently installed.)
 Preparing to unpack .../python3-apt_2.0.0ubuntu0.20.04.7_amd64.deb ...
 Unpacking python3-apt (2.0.0ubuntu0.20.04.7) over (2.0.0ubuntu0.20.04.7) ...
 Preparing to unpack .../python-apt_2.0.0ubuntu0.20.04.7_amd64.deb ...
@@ -205,15 +205,15 @@ GRUB_CMDLINE_LINUX=""
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
 Get:1 https://cli.github.com/packages stable InRelease [3,743 B]
-Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal InRelease
 Err:1 https://cli.github.com/packages stable InRelease
   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
-Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:4 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
-Hit:5 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
-Hit:6 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
-Hit:7 http://security.ubuntu.com/ubuntu focal-security InRelease
-Hit:8 http://archive.canonical.com/ubuntu focal InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:5 http://archive.canonical.com/ubuntu focal InRelease
+Hit:6 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:7 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Hit:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
 Hit:9 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
 Reading package lists...
 W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0

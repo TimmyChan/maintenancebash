@@ -27,18 +27,20 @@ DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 timedatectl set-local-rtc 1
 apt clean -qy
 apt-get install apt-transport-https
-apt update -qy
-apt -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade -qy 
 
 apt install software-properties-common -qy
 add-apt-repository ppa:deadsnakes/ppa -y
 
-# basic programming and typesetting
+# basics
 apt install curl -qy
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 chmod 644 /usr/share/keyrings/githubcli-archive-keyring.gpg
 chmod 644 /etc/apt/sources.list.d/github-cli.list
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9A2FD067A2E3EF7B
+
+apt update -qy
+apt -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade -qy 
 
 
 # LaTeX
@@ -62,10 +64,10 @@ cp /usr/lib/python3/dist-packages/apt_pkg.cpython-38-x86_64-linux-gnu.so /usr/li
 # yes | pip install somepackage --quiet 
 --exists-action ignore
 # https://stackoverflow.com/questions/8400382/python-pip-silent-install
-yes | python3.8 -m pip install jupyterlab --quiet --exists-action i
-yes | python3.8 -m pip install notebook --quiet --exists-action i
-yes | python3.9 -m pip install jupyterlab --quiet --exists-action i
-yes | python3.9 -m pip install notebook --quiet --exists-action i
+yes | python3.8 -m pip install jupyterlab --quiet 
+yes | python3.8 -m pip install notebook --quiet 
+yes | python3.9 -m pip install jupyterlab --quiet 
+yes | python3.9 -m pip install notebook --quiet 
 
 # Linter
 apt install flake8 -qy

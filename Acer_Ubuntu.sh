@@ -32,12 +32,13 @@ add-apt-repository ppa:deadsnakes/ppa -y
 
 # basics
 apt install curl -qy
+# https://github.com/cli/cli/blob/trunk/docs/install_linux.md
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 yes | echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 chmod 644 /usr/share/keyrings/githubcli-archive-keyring.gpg
 chmod 644 /etc/apt/sources.list.d/github-cli.list
-apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9A2FD067A2E3EF7B
-
+apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys C99B11DEB97541F0
+apt install gh
 apt update -qy
 apt -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade -qy 
 
@@ -60,8 +61,7 @@ cp /usr/lib/python3/dist-packages/apt_pkg.cpython-38-x86_64-linux-gnu.so /usr/li
 
 # Jupyter Notebooks
 # https://jupyter.org/install
-# yes | pip install somepackage --quiet 
---exists-action ignore
+# yes | pip install somepackage --quiet --exists-action ignore
 # https://stackoverflow.com/questions/8400382/python-pip-silent-install
 yes | python3.8 -m pip install jupyterlab --quiet 
 yes | python3.8 -m pip install notebook --quiet 
@@ -100,7 +100,6 @@ snap install discord
 snap install vlc  
 snap install sublime-text --classic
 snap install zoom-client
-snap install gh
 snap refresh 
 # Acer Spin SP314 Specific
 # https://www.gnu.org/software/sed/manual/sed.html

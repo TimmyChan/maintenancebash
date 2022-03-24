@@ -266,3 +266,12 @@ Upkeep Complete!
 
 
 @reboot sleep 60 && export DISPLAY=:0 && /home/tc/Dev/maintenancebash/Acer_Ubuntu.sh > /home/tc/Dev/maintenancebash/out.log 2>&1
+[main 4733482] Wed 23 Mar 2022 06:10:34 PM PDT
+ 3 files changed, 70 insertions(+), 41 deletions(-)
+No protocol specified
+Error: Can't open display: :0
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.

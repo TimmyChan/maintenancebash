@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 # Acer Spin SP314 Specific
 # https://www.gnu.org/software/sed/manual/sed.html
 # https://ubuntuforums.org/showthread.php?t=2450981

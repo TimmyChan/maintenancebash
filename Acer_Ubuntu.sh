@@ -76,10 +76,12 @@ apt install sagemath -qy
 apt install sagemath-jupyter -qy
 apt install sagemath-doc-en -qy
 
+
+
+##### BROWSER AND MEDIA #####
 # Ubuntu extras
 apt install ubuntu-restricted-extras gnome-tweaks -qy
 
-##### BROWSER AND MEDIA #####
 # Google Chrome
 apt install google-chrome-stable chrome-gnome-shell -qy  
 
@@ -91,6 +93,7 @@ apt install peek -qy
 
 ##### MAINTENANCE #####
 # TLP - Optimize Linux Laptop Battery Life
+apt install smartmontools -qy
 # https://linrunner.de/tlp/
 apt install tlp tlp-rdw -qy
 
@@ -107,7 +110,9 @@ chmod +x Acer_Spin_SP314.sh
 source ./Acer_Spin_SP314.sh
 
 apt clean -qy
-apt -qy update 
+apt update -qy
+apt upgrade -qy
+apt autoremove -qy
 apt -qy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade
 echo ""
 echo ""
@@ -130,8 +135,10 @@ rm cron_bkp
 
 crontab -l
 
+
 now=`date`
 echo $now > ${DIR}/last_run.txt
+tlp-stat > tlp-stat.log
 
 ##### Pushing to Git #####
 git -C ${DIR} add .

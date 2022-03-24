@@ -37,9 +37,9 @@ add-apt-repository ppa:deadsnakes/ppa -y
 apt install curl -qy
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-sudo chmod 644 /usr/share/keyrings/githubcli-archive-keyring.gpg
-sudo chmod 644 /etc/apt/sources.list.d/github-cli.list
-apt install gh
+chmod 644 /usr/share/keyrings/githubcli-archive-keyring.gpg
+chmod 644 /etc/apt/sources.list.d/github-cli.list
+
 
 # LaTeX
 apt install texlive-full -qy
@@ -99,6 +99,7 @@ snap install discord
 snap install vlc  
 snap install sublime-text --classic
 snap install zoom-client
+snap install gh
 snap refresh 
 # Acer Spin SP314 Specific
 # https://www.gnu.org/software/sed/manual/sed.html

@@ -88,11 +88,11 @@ apt install tlp tlp-rdw -qy
 
 
 # snap stuff
-snap install discord
-snap install vlc 
+snap install discord --classic
+snap install vlc  --classic
 snap install sublime-text --classic
-snap install gh
-snap install zoom-client
+snap install gh --classic
+snap install zoom-client --classic
 
 # Acer Spin SP314 Specific
 # https://www.gnu.org/software/sed/manual/sed.html

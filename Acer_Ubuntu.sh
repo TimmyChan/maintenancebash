@@ -52,7 +52,8 @@ cp /usr/lib/python3/dist-packages/apt_pkg.cpython-38-x86_64-linux-gnu.so /usr/li
 
 # Jupyter Notebooks
 # https://jupyter.org/install
-# yes | pip install somepackage --quiet --exists-action ignore
+# yes | pip install somepackage --quiet 
+--exists-action ignore
 # https://stackoverflow.com/questions/8400382/python-pip-silent-install
 yes | python3.8 -m pip install jupyterlab --quiet --exists-action i
 yes | python3.8 -m pip install notebook --quiet --exists-action i
@@ -68,7 +69,6 @@ apt install sagemath-jupyter -qy
 apt install sagemath-doc-en -qy
 
 # Ubuntu extras
-echo "Installing Ubuntu extras..."
 apt install ubuntu-restricted-extras gnome-tweaks -qy
 
 ##### BROWSER AND MEDIA #####

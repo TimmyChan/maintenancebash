@@ -33,7 +33,11 @@ apt -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" up
 apt install software-properties-common -qy
 add-apt-repository ppa:deadsnakes/ppa -y
 
+# basic programming and typesetting
 apt install curl -qy
+apt install texlive-full -qy
+apt install texmaker -qy
+
 
 # Python Setup
 apt install python3.9 -qy
@@ -46,8 +50,22 @@ update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
 apt install --reinstall python3-pip python3.8-venv python3.9-venv python-apt python3-apt -qy
 cp /usr/lib/python3/dist-packages/apt_pkg.cpython-38-x86_64-linux-gnu.so /usr/lib/python3/dist-packages/apt_pkg.so
 
+# Jupyter Notebooks
+# https://jupyter.org/install
+# yes | pip install somepackage --quiet --exists-action ignore
+# https://stackoverflow.com/questions/8400382/python-pip-silent-install
+yes | python3.8 -m pip install jupyterlab --quiet --exists-action ignore
+yes | python3.8 -m pip install notebook --quiet --exists-action ignore
+yes | python3.9 -m pip install jupyterlab --quiet --exists-action ignore
+yes | python3.9 -m pip install notebook --quiet --exists-action ignore
+
 # Linter
 apt install flake8 -qy
+
+# SAGEmath
+apt install sagemath -qy
+apt install sagemath-jupyter -qy
+apt install sagemath-doc-en -qy
 
 # Ubuntu extras
 echo "Installing Ubuntu extras..."
@@ -70,9 +88,11 @@ apt install tlp tlp-rdw -qy
 
 
 # snap stuff
+snap install discord
 snap install vlc 
 snap install sublime-text --classic
 snap install gh
+snap install zoom-client
 
 # Acer Spin SP314 Specific
 # https://www.gnu.org/software/sed/manual/sed.html

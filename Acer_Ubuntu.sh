@@ -49,9 +49,6 @@ cp /usr/lib/python3/dist-packages/apt_pkg.cpython-38-x86_64-linux-gnu.so /usr/li
 # Linter
 apt install flake8 -qy
 
-# Git
-apt install git -qy
-
 # Ubuntu extras
 echo "Installing Ubuntu extras..."
 apt install ubuntu-restricted-extras gnome-tweaks -qy

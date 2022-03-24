@@ -54,10 +54,10 @@ cp /usr/lib/python3/dist-packages/apt_pkg.cpython-38-x86_64-linux-gnu.so /usr/li
 # https://jupyter.org/install
 # yes | pip install somepackage --quiet --exists-action ignore
 # https://stackoverflow.com/questions/8400382/python-pip-silent-install
-yes | python3.8 -m pip install jupyterlab --quiet --exists-action ignore
-yes | python3.8 -m pip install notebook --quiet --exists-action ignore
-yes | python3.9 -m pip install jupyterlab --quiet --exists-action ignore
-yes | python3.9 -m pip install notebook --quiet --exists-action ignore
+yes | python3.8 -m pip install jupyterlab --quiet --exists-action i
+yes | python3.8 -m pip install notebook --quiet --exists-action i
+yes | python3.9 -m pip install jupyterlab --quiet --exists-action i
+yes | python3.9 -m pip install notebook --quiet --exists-action i
 
 # Linter
 apt install flake8 -qy
@@ -93,7 +93,7 @@ snap install vlc
 snap install sublime-text --classic
 snap install gh 
 snap install zoom-client
-
+snap refresh 
 # Acer Spin SP314 Specific
 # https://www.gnu.org/software/sed/manual/sed.html
 # https://ubuntuforums.org/showthread.php?t=2450981

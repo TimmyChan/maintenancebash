@@ -5,20 +5,20 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 apt-transport-https is already the newest version (2.0.6).
-0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
 Get:1 https://cli.github.com/packages stable InRelease [3,743 B]
-Hit:2 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://archive.canonical.com/ubuntu focal InRelease
 Err:1 https://cli.github.com/packages stable InRelease
   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
-Hit:3 http://us.archive.ubuntu.com/ubuntu focal InRelease
-Hit:4 http://archive.canonical.com/ubuntu focal InRelease
-Hit:5 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
-Hit:6 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
-Hit:7 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
-Hit:8 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:4 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:5 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:6 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:7 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Hit:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
 Hit:9 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
 Reading package lists...
 W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
@@ -30,47 +30,7 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 Calculating upgrade...
-The following packages will be upgraded:
-  thunderbird thunderbird-gnome-support thunderbird-locale-en
-  thunderbird-locale-en-us tzdata
-5 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-5 standard security updates
-Need to get 56.7 MB of archives.
-After this operation, 1,563 kB disk space will be freed.
-Get:1 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 tzdata all 2022a-0ubuntu0.20.04 [294 kB]
-Get:2 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 thunderbird-locale-en amd64 1:91.7.0+build2-0ubuntu0.20.04.1 [950 kB]
-Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 thunderbird amd64 1:91.7.0+build2-0ubuntu0.20.04.1 [55.5 MB]
-Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 thunderbird-gnome-support amd64 1:91.7.0+build2-0ubuntu0.20.04.1 [8,640 B]
-Get:5 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 thunderbird-locale-en-us all 1:91.7.0+build2-0ubuntu0.20.04.1 [9,148 B]
-Preconfiguring packages ...
-Fetched 56.7 MB in 5s (12.2 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 188264 files and directories currently installed.)
-Preparing to unpack .../tzdata_2022a-0ubuntu0.20.04_all.deb ...
-Unpacking tzdata (2022a-0ubuntu0.20.04) over (2021e-0ubuntu0.20.04) ...
-Preparing to unpack .../thunderbird-locale-en_1%3a91.7.0+build2-0ubuntu0.20.04.1_amd64.deb ...
-Unpacking thunderbird-locale-en (1:91.7.0+build2-0ubuntu0.20.04.1) over (1:91.5.0+build1-0ubuntu0.20.04.1) ...
-Preparing to unpack .../thunderbird_1%3a91.7.0+build2-0ubuntu0.20.04.1_amd64.deb ...
-Unpacking thunderbird (1:91.7.0+build2-0ubuntu0.20.04.1) over (1:91.5.0+build1-0ubuntu0.20.04.1) ...
-Preparing to unpack .../thunderbird-gnome-support_1%3a91.7.0+build2-0ubuntu0.20.04.1_amd64.deb ...
-Unpacking thunderbird-gnome-support (1:91.7.0+build2-0ubuntu0.20.04.1) over (1:91.5.0+build1-0ubuntu0.20.04.1) ...
-Preparing to unpack .../thunderbird-locale-en-us_1%3a91.7.0+build2-0ubuntu0.20.04.1_all.deb ...
-Unpacking thunderbird-locale-en-us (1:91.7.0+build2-0ubuntu0.20.04.1) over (1:91.5.0+build1-0ubuntu0.20.04.1) ...
-Setting up tzdata (2022a-0ubuntu0.20.04) ...
-
-Current default time zone: 'America/Los_Angeles'
-Local time is now:      Wed Mar 23 18:10:15 PDT 2022.
-Universal Time is now:  Thu Mar 24 01:10:15 UTC 2022.
-Run 'dpkg-reconfigure tzdata' if you wish to change it.
-
-Setting up thunderbird (1:91.7.0+build2-0ubuntu0.20.04.1) ...
-Setting up thunderbird-locale-en (1:91.7.0+build2-0ubuntu0.20.04.1) ...
-Setting up thunderbird-locale-en-us (1:91.7.0+build2-0ubuntu0.20.04.1) ...
-Setting up thunderbird-gnome-support (1:91.7.0+build2-0ubuntu0.20.04.1) ...
-Processing triggers for mime-support (3.64ubuntu1) ...
-Processing triggers for hicolor-icon-theme (0.17-2) ...
-Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
-Processing triggers for man-db (2.9.1-1) ...
-Processing triggers for desktop-file-utils (0.24-1ubuntu3) ...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
@@ -81,14 +41,14 @@ software-properties-common is already the newest version (0.99.9.8).
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Get:1 https://cli.github.com/packages stable InRelease [3,743 B]
 Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
-Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:3 http://archive.canonical.com/ubuntu focal InRelease
 Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
 Err:1 https://cli.github.com/packages stable InRelease
   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
-Hit:5 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
-Hit:6 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
+Hit:5 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:6 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
 Hit:7 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
-Hit:8 http://archive.canonical.com/ubuntu focal InRelease
+Hit:8 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
 Hit:9 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
 Reading package lists...
 W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
@@ -123,7 +83,7 @@ Get:2 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal/main amd64 python3.9-
 Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python-apt amd64 2.0.0ubuntu0.20.04.7 [154 kB]
 Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3.8-venv amd64 3.8.10-0ubuntu1~20.04.2 [5,444 B]
 Get:5 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3-pip all 20.0.2-5ubuntu1.6 [231 kB]
-Fetched 3,278 kB in 2s (2,112 kB/s)
+Fetched 3,278 kB in 2s (1,974 kB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 188264 files and directories currently installed.)
 Preparing to unpack .../python3-apt_2.0.0ubuntu0.20.04.7_amd64.deb ...
 Unpacking python3-apt (2.0.0ubuntu0.20.04.7) over (2.0.0ubuntu0.20.04.7) ...
@@ -237,14 +197,14 @@ GRUB_CMDLINE_LINUX=""
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
 Get:1 https://cli.github.com/packages stable InRelease [3,743 B]
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://archive.canonical.com/ubuntu focal InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:5 https://dl.google.com/linux/chrome/deb stable InRelease
 Err:1 https://cli.github.com/packages stable InRelease
   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C99B11DEB97541F0
-Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
-Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:4 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
-Hit:5 http://security.ubuntu.com/ubuntu focal-security InRelease
-Hit:6 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
-Hit:7 http://archive.canonical.com/ubuntu focal InRelease
+Hit:6 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:7 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal InRelease
 Hit:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
 Hit:9 http://ppa.launchpad.net/gerardpuig/ppa/ubuntu focal InRelease
 Reading package lists...
@@ -266,12 +226,3 @@ Upkeep Complete!
 
 
 @reboot sleep 60 && export DISPLAY=:0 && /home/tc/Dev/maintenancebash/Acer_Ubuntu.sh > /home/tc/Dev/maintenancebash/out.log 2>&1
-[main 4733482] Wed 23 Mar 2022 06:10:34 PM PDT
- 3 files changed, 70 insertions(+), 41 deletions(-)
-No protocol specified
-Error: Can't open display: :0
-git@github.com: Permission denied (publickey).
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.

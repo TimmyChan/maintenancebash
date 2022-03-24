@@ -27,6 +27,7 @@ DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 timedatectl set-local-rtc 1
 apt-get install apt-transport-https
 
+
 apt install software-properties-common -qy
 add-apt-repository ppa:deadsnakes/ppa -y
 
@@ -38,10 +39,9 @@ yes | echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings
 chmod 644 /usr/share/keyrings/githubcli-archive-keyring.gpg
 chmod 644 /etc/apt/sources.list.d/github-cli.list
 apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys C99B11DEB97541F0
-apt install gh
-apt update -qy
-apt -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade -qy 
 
+apt update
+apt install gh
 
 # LaTeX
 apt install texlive-full -qy
@@ -101,12 +101,10 @@ snap install vlc
 snap install sublime-text --classic
 snap install zoom-client
 snap refresh 
-# Acer Spin SP314 Specific
-# https://www.gnu.org/software/sed/manual/sed.html
-# https://ubuntuforums.org/showthread.php?t=2450981
-# https://sciactive.com/2020/12/04/how-to-install-ubuntu-on-acer-spin-5-sp513-54n-for-the-perfect-linux-2-in-1/
-sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i8042.nopnp=1 pci=nocrs"/' /etc/default/grub
-update-grub
+
+# Acer_Spin_SP314 specific stuff
+chmod +x Acer_Spin_SP314.sh
+source ./Acer_Spin_SP314.sh
 
 apt clean -qy
 apt -qy update 

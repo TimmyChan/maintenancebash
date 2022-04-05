@@ -49,6 +49,7 @@ done
 timedatectl set-local-rtc 1
 
 snap refresh 
+killall apt apt-get
 apt-get clean -qy
 apt-get update -qy
 apt-get autoremove -qy

@@ -25,25 +25,27 @@ source ${DIR}/Git_Push_Now.sh
 while getopts ":i" flag; do
   case $flag in
     i)
-      echo "Initial Run Mode" >&2
-      echo "Running Ubuntu Initial Setup..." >&2
+      echo "    Initiation Mode..." >&2
+      echo "    Running Ubuntu Initial Setup..." >&2
       # Stuff that should only run one time.
       chmod +x ${DIR}/Ubuntu_Initial_Setup.sh 
       source ${DIR}/Ubuntu_Initial_Setup.sh
 
 
-      echo "Running Acer_Spin_SP314 Setup..." >&2
+      echo "    Running Acer_Spin_SP314 Setup..." >&2
       # Acer_Spin_SP314 specific stuff
       chmod +x ${DIR}/Acer_Spin_SP314.sh
       source ${DIR}/Acer_Spin_SP314.sh
 
       ;;
     \?)
-      echo "Invalid option: -$OPTARG" >&2
+      echo "    Invalid option: -$OPTARG" >&2
       ;;
   esac
 done
-
+if (( $OPTIND == 1 )); then
+   echo "    Maintance Mode..."
+fi
 ##### INITAL STEPS #####
 # https://itsfoss.com/wrong-time-dual-boot/ (99% of my Ubuntu Setups are dual boot with Windows)
 timedatectl set-local-rtc 1

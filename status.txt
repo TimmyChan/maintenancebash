@@ -1,5 +1,5 @@
-Last run: Tue 05 Apr 2022 12:19:34 AM PDT
-By 
+Last run: Tue 05 Apr 2022 12:26:38 AM PDT
+By root
 tlp-stat output:
 ##########
 --- TLP 1.3.1 --------------------------------------------
@@ -65,7 +65,7 @@ Boot mode      = UEFI
 +++ TLP Status
 State          = enabled
 RDW state      = enabled
-Last run       = 12:18:24 AM,     71 sec(s) ago
+Last run       = 12:18:24 AM,    494 sec(s) ago
 Mode           = AC
 Power source   = AC
 
@@ -146,7 +146,7 @@ CPU model      = Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
 /proc/sys/kernel/nmi_watchdog                          = 0
 
 +++ Temperatures
-CPU temp               =    75 [°C]
+CPU temp               =    52 [°C]
 Fan speed              = (not available)
 
 +++ File System
@@ -173,7 +173,7 @@ Devices = nvme0n1 sda
     Available Spare:                    100%
     Available Spare Threshold:          100%
     Percentage Used:                    10%
-    Data Units Written:                 18,587,687 [9.51 TB]
+    Data Units Written:                 18,588,159 [9.51 TB]
     Power Cycles:                       488
     Power On Hours:                     2,215
     Unsafe Shutdowns:                   36

@@ -31,7 +31,7 @@ while getopts ":i" flag; do
       echo "Initial Run Mode" >&2
       echo "Running Ubuntu Initial Setup..." >&2
       # Stuff that should only run one time.
-      chmod +x Ubuntu_Initial_Setup.sh 
+      chmod +x ./Ubuntu_Initial_Setup.sh 
       source ./Ubuntu_Initial_Setup.sh
 
 

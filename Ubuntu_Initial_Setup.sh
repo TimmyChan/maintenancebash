@@ -92,10 +92,10 @@ snap refresh
 ##### ADDING TO CRONJOB #####
 # https://fedingo.com/how-to-create-cron-job-using-shell-script/
 # https://askubuntu.com/questions/893911/when-writing-a-bash-script-how-do-i-get-the-absolute-path-of-the-location-of-th
-crontab -l > cron_bkp
+sudo crontab -l > cron_bkp
 
 echo "@reboot sleep 60 && export DISPLAY=:0 && ${DIR}/Maintenance.sh > ${DIR}/out.log 2>&1"  >> cron_bkp
-crontab cron_bkp
+sudo crontab cron_bkp
 rm cron_bkp
 
 crontab -l

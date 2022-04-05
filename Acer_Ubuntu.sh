@@ -49,10 +49,10 @@ done
 timedatectl set-local-rtc 1
 
 snap refresh 
-apt clean -qy
-apt update -qy
-apt autoremove -qy
-apt -qy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade
+apt-get clean -qy
+apt-get update -qy
+apt-get autoremove -qy
+apt-get -qy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade
 echo ""
 echo ""
 echo "Upkeep Complete!"

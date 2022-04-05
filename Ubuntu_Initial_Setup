@@ -31,7 +31,7 @@ apt install texlive-full -qy
 apt install texmaker -qy
 
 
-# Python Setup
+# Python Setup. For reasons, I want to have both 3.8 and 3.9 but default to 3.8
 apt install python3.9 -qy
 update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
 update-alternatives --install /usr/bin/python python /usr/bin/python3.8 2

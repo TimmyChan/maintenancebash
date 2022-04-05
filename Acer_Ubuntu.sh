@@ -19,8 +19,8 @@ SOURCE=${BASH_SOURCE[0]}
   done
   DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 
-chmod +x ./Git_Push_Now.sh
-source ./Git_Push_Now.sh
+chmod +x ${DIR}/Git_Push_Now.sh
+source ${DIR}/Git_Push_Now.sh
 
 while getopts ":i" flag; do
   case $flag in
@@ -28,14 +28,14 @@ while getopts ":i" flag; do
       echo "Initial Run Mode" >&2
       echo "Running Ubuntu Initial Setup..." >&2
       # Stuff that should only run one time.
-      chmod +x ./Ubuntu_Initial_Setup.sh 
-      source ./Ubuntu_Initial_Setup.sh
+      chmod +x ${DIR}/Ubuntu_Initial_Setup.sh 
+      source ${DIR}/Ubuntu_Initial_Setup.sh
 
 
       echo "Running Acer_Spin_SP314 Setup..." >&2
       # Acer_Spin_SP314 specific stuff
-      chmod +x Acer_Spin_SP314.sh
-      source ./Acer_Spin_SP314.sh
+      chmod +x ${DIR}/Acer_Spin_SP314.sh
+      source ${DIR}/Acer_Spin_SP314.sh
 
       ;;
     \?)

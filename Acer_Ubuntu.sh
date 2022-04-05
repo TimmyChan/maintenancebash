@@ -14,21 +14,22 @@ export NEEDRESTART_MODE=a
 export DEBIAN_FRONTEND=noninteractive
 export DEBIAN_PRIORITY=critical
 
-function gitpushnow() {
-  now=`date`
-  SOURCE=${BASH_SOURCE[0]}
+SOURCE=${BASH_SOURCE[0]}
   while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
     DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
     SOURCE=$(readlink "$SOURCE")
     [[ $SOURCE != /* ]] && SOURCE=$DIR/$SOURCE # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
   done
   DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
-  echo ${now} > ${DIR}/last_run.txt
-  tlp-stat > ${DIR}/tlp-stat.log
+
+function gitpushnow() {
+  now=`date`
+  echo ${now} > $1/last_run.txt
+  tlp-stat > $1/tlp-stat.log
   ##### Pushing to Git #####
-  git -C ${DIR} add .
-  git -C ${DIR} commit -m "${now}"
-  git -C ${DIR} push
+  git -C $1 add .
+  git -C $1 commit -m "${now}"
+  git -C $1 push
 }
 
 
@@ -41,7 +42,7 @@ while getopts ":i" flag; do
       echo "-i was triggered!" >&2
       echo "Running Ubuntu Initial Setup..."
 
-      chmod +x Ubuntu_Initial_Setup.sh
+      chmod +x Ubuntu_Initial_Setup.sh 
       source ./Ubuntu_Initial_Setup.sh
 
 
@@ -75,7 +76,7 @@ echo "##########"
 echo ""
 echo ""
 
-gitpushnow 
+gitpushnow ${DIR}
 
 
 

@@ -29,13 +29,13 @@ while getopts ":i" flag; do
       echo "    Running Ubuntu Initial Setup..." >&2
       # Stuff that should only run one time.
       chmod +x ${DIR}/Ubuntu_Initial_Setup.sh 
-      source ${DIR}/Ubuntu_Initial_Setup.sh
+      sudo ${DIR}/Ubuntu_Initial_Setup.sh
 
 
       echo "    Running Acer_Spin_SP314 Setup..." >&2
       # Acer_Spin_SP314 specific stuff
       chmod +x ${DIR}/Acer_Spin_SP314.sh
-      source ${DIR}/Acer_Spin_SP314.sh
+      sudo ${DIR}/Acer_Spin_SP314.sh
 
       ;;
     \?)

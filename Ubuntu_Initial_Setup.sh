@@ -80,14 +80,15 @@ apt install smartmontools -qy
 # https://linrunner.de/tlp/
 apt install tlp tlp-rdw -qy
 
-
 # snap stuff
 snap install discord 
 snap install vlc  
 snap install sublime-text --classic
 snap install zoom-client
 snap refresh 
-##### ADDING TO CRONJOB #####
+
+
+##### ADDING TO CRONTAB #####
 # https://fedingo.com/how-to-create-cron-job-using-shell-script/
 # https://askubuntu.com/questions/893911/when-writing-a-bash-script-how-do-i-get-the-absolute-path-of-the-location-of-th
 sudo crontab -l > cron_bkp

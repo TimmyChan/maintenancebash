@@ -2,9 +2,6 @@
 # This bash shell script is a maintenance and setup file for personal use
 # Once run this script will add itself to crontab and run @reboot
 # And also it pushes the directory to git. (entirely inspired by Github user @nodeadtree)
-# Please note that besides running this file,
-# one should setup github authentication using HTTPS for the repo for this trick to work,
-# some weird things happen if you try to use SSH in root. 
 
 # UBUNTU 20.04 LTS
 # https://linuxhint.com/40_things_after_installing_ubuntu/
@@ -51,6 +48,7 @@ done
 # https://itsfoss.com/wrong-time-dual-boot/ (99% of my Ubuntu Setups are dual boot with Windows)
 timedatectl set-local-rtc 1
 
+snap refresh 
 apt clean -qy
 apt update -qy
 apt autoremove -qy
@@ -64,8 +62,3 @@ echo ""
 echo ""
 
 gitpushnow ${DIR}
-
-
-
-
-

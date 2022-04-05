@@ -51,10 +51,8 @@ done
 # https://itsfoss.com/wrong-time-dual-boot/ (99% of my Ubuntu Setups are dual boot with Windows)
 timedatectl set-local-rtc 1
 
-apt update
 apt clean -qy
 apt update -qy
-apt upgrade -qy
 apt autoremove -qy
 apt -qy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade
 echo ""

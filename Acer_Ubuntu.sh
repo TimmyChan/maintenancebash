@@ -22,19 +22,8 @@ SOURCE=${BASH_SOURCE[0]}
   done
   DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 
-function gitpushnow() {
-  now=`date`
-  echo ${now} > $1/last_run.txt
-  tlp-stat > $1/tlp-stat.log
-  ##### Pushing to Git #####
-  git -C $1 add .
-  git -C $1 commit -m "${now}"
-  git -C $1 push
-}
-
-
-
-
+chmod +x ./Git_Push_Now.sh
+source ./Git_Push_Now.sh
 
 while getopts ":i" flag; do
   case $flag in

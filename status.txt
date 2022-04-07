@@ -1,4 +1,4 @@
-Last run: Wed 06 Apr 2022 06:05:50 PM PDT
+Last run: Wed 06 Apr 2022 09:05:00 PM PDT
 By 
 tlp-stat output:
 ##########
@@ -65,7 +65,7 @@ Boot mode      = UEFI
 +++ TLP Status
 State          = enabled
 RDW state      = enabled
-Last run       = 06:04:36 PM,     74 sec(s) ago
+Last run       = 09:03:47 PM,     73 sec(s) ago
 Mode           = AC
 Power source   = AC
 
@@ -146,7 +146,7 @@ CPU model      = Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
 /proc/sys/kernel/nmi_watchdog                          = 0
 
 +++ Temperatures
-CPU temp               =    50 [°C]
+CPU temp               =    59 [°C]
 Fan speed              = (not available)
 
 +++ File System
@@ -169,11 +169,11 @@ Devices = nvme0n1 sda
 
   SMART info:
     Critical Warning:                   0x00
-    Temperature:                        29 Celsius
+    Temperature:                        35 Celsius
     Available Spare:                    100%
     Available Spare Threshold:          100%
-    Percentage Used:                    10%
-    Data Units Written:                 18,642,232 [9.54 TB]
+    Percentage Used:                    11%
+    Data Units Written:                 18,644,239 [9.54 TB]
     Power Cycles:                       489
     Power On Hours:                     2,218
     Unsafe Shutdowns:                   36

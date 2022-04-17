@@ -46,10 +46,10 @@ cp /usr/lib/python3/dist-packages/apt_pkg.cpython-38-x86_64-linux-gnu.so /usr/li
 # https://jupyter.org/install
 # yes | pip install somepackage --quiet --exists-action ignore
 # https://stackoverflow.com/questions/8400382/python-pip-silent-install
-yes | python3.8 -m pip install jupyterlab --quiet 
-yes | python3.8 -m pip install notebook --quiet 
-yes | python3.9 -m pip install jupyterlab --quiet 
-yes | python3.9 -m pip install notebook --quiet 
+yes | python3.8 -m pip install jupyterlab --quiet
+yes | python3.8 -m pip install notebook --quiet
+yes | python3.9 -m pip install jupyterlab --quiet
+yes | python3.9 -m pip install notebook --quiet
 
 # Linter
 apt install flake8 -qy
@@ -66,7 +66,7 @@ apt install sagemath-doc-en -qy
 apt install ubuntu-restricted-extras gnome-tweaks -qy
 
 # Google Chrome
-apt install google-chrome-stable chrome-gnome-shell -qy  
+apt install google-chrome-stable chrome-gnome-shell -qy
 
 # Compression
 apt install rar unrar p7zip-full p7zip-rar -qy
@@ -81,11 +81,12 @@ apt install smartmontools -qy
 apt install tlp tlp-rdw -qy
 
 # snap stuff
-snap install discord 
-snap install vlc  
+snap install discord
+snap install vlc
 snap install sublime-text --classic
 snap install zoom-client
-snap refresh 
+snap install todoist
+snap refresh
 
 
 ##### ADDING TO CRONTAB #####
@@ -98,3 +99,5 @@ sudo crontab cron_bkp
 rm cron_bkp
 
 crontab -l
+
+google-chrome https://flathub.org/apps/details/com.toggl.TogglDesktop

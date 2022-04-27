@@ -74,6 +74,14 @@ apt install rar unrar p7zip-full p7zip-rar -qy
 # Making Gifs
 apt install peek -qy
 
+# Using Ubuntu
+sudo apt-get upgrade gnupg2 -qy
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -qy nodejs
+
+
+
+
 ##### MAINTENANCE #####
 # TLP - Optimize Linux Laptop Battery Life
 apt install smartmontools -qy
@@ -100,4 +108,5 @@ rm cron_bkp
 
 crontab -l
 
-google-chrome https://flathub.org/apps/details/com.toggl.TogglDesktop
+google-chrome https://flathub.org/apps/details/com.toggl.TogglDesktop &
+google-chrome https://www.rosehosting.com/blog/how-to-install-reveal-js-on-ubuntu-20-04#h-step-3-install-reveal-js &

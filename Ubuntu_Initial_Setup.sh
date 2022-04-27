@@ -108,5 +108,5 @@ rm cron_bkp
 
 crontab -l
 
-google-chrome https://flathub.org/apps/details/com.toggl.TogglDesktop &
-google-chrome https://www.rosehosting.com/blog/how-to-install-reveal-js-on-ubuntu-20-04#h-step-3-install-reveal-js &
+open https://flathub.org/apps/details/com.toggl.TogglDesktop &
+open https://www.rosehosting.com/blog/how-to-install-reveal-js-on-ubuntu-20-04#h-step-3-install-reveal-js" &
